@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Javier Mauricio Lizca Jimenez Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename="css/styles.css")}}">
+    <link rel="stylesheet" href="{{url_for('static', filename="css/normalize.css")}}">
+    <link rel="icon" href="{{url_for('static', filename="img/back/logo.png")}}">
+    <title>Portafolio | Javier Mauricio Lizca Jimenez</title>
+</head>
+
+<nav id="navbar">
+    <div class="logo">
+        
+        <img src="{{url_for('static', filename="img/back/logo.png")}}"
+            class="logo-img" alt="logo" name="logo">
+        <h1 class="name-logo">Javier Lizca</h1>
+        
+     </div>
+     
+    <ul class="nav-links">
+        <div id="flags" class="flags nav-link">
+            <div class="flags-theme" id="flags-theme">
+              <img src="{{url_for('static', filename="img/lang/es.png")}}"
+               class="lang" id="flags-icon" alt="language" name="lang"/>
+            </div>
+        </div>
+        <div class="colors nav-link">
+            <div class="color blue" id="blue"></div>
+            <div class="color black" id="black"></div>
+            <div class="color white" id="white"></div>
+        </div>
+
+        <li class="nav-link nav-link2"><a href="#menu" 
+            data-translate="nav-menu"></a></li>
+
+        <li class="nav-link"><a href="#aboutMe" 
+            data-translate="nav-about"></a></li>
+
+        <li class="nav-link nav-link2"><a href="#myProjects" 
+            data-translate="nav-projects"></a></li>
+
+        <li class="nav-link nav-link3"><a href="#contact" 
+            data-translate="nav-contact"></a></li>
+        
+    </ul>
+    <div class="toggle" id="toggle">III</div>
+</nav>
+
+<!--<section class="title-section">
+    <div class="main-title">
+        <img src="img/logo/logo.jpg" class="logo" alt="logo" name="logo">
+        <h1>Javier Lizca</h1>
+    </div>
+</section>-->
+
+
+<section class="title-section">
+
+  </section>
+</header>
+
+<body>
+    <div class="site">
+
+
+        <div class="aboutMenu" id="menu">
+
+            <div class="aboutPhoto">
+                <img src="{{url_for('static', filename="img/profile/profile.png")}}"
+                 class="profilePhoto" alt="profile" name="profile">
+            </div> 
+
+            <div class="aboutInfo">
+                <br><br><br><br>
+                <h2 class="aboutTitle">Javier Mauricio Lizca</h2>
+                <p data-translate="aboutMe" class="aboutMe-info"></p>
+
+                <a href="static/pdf/JavierLizcaCurriculumVitae.pdf" target="_blank">
+                    <button class="button-menu" data-translate="download"></button></a>
+                <!--<a href="static/pdf/JavierLizcaCurriculumVitae.pdf" download>
+                    <button class="button-menu" data-translate="download"></button></a>-->
+                
+                <a href="#contact"><button class="button-menu button-contact" data-translate="contact"></button></a>
+            </div>
+
+        </div>
+
+        <div class="aboutMe" id="aboutMe">
+
+            <div class="aboutPhotoEdu">
+                <img src="{{url_for('static', filename="img/profile/photo2.jpg")}}"
+                 class="photo" alt="profile" name="profile">
+            </div>
+
+            <div class="aboutAll">
+                <div class="aboutEdu">
+                    <h2 data-translate="aboutMe-title" class="aboutTitle"></h2>
+                    <p class="aboutMe-info" data-translate="aboutMe2"></p>
+                    <p class="aboutMe-info" data-translate="aboutMe3"></p>
+                </div>
+                <div class="langs">
+                    <div class="langs-title">
+                        <h2 data-translate="learned"></h2>
+                    </div>
+
+                    <div class="langs-learned">
+                        <img src="{{url_for('static', filename="img/icons/html.png")}}" class="lang-program" alt="html" id="html">
+                        <img src="{{url_for('static', filename="img/icons/css.png")}}" class="lang-program" alt="css" id="css">
+                        <img src="{{url_for('static', filename="img/icons/javascript.png")}}" class="lang-program" alt="javascript" id="javascript">
+                        <img src="{{url_for('static', filename="img/icons/laravel.png")}}" class="lang-program" alt="laravel" id="laravel">
+                        <img src="{{url_for('static', filename="img/icons/bootstrap.png")}}" class="lang-program" alt="bootstrap" id="bootstrap">
+                        <img src="{{url_for('static', filename="img/icons/php.png")}}" class="lang-program" alt="php" id="php">
+                    </div>
+
+                    <div class="langs-title">
+                        <h2 data-translate="learn"></h2>
+                    </div>
+
+                    <div class="langs-learn">
+                        <img src="{{url_for('static', filename="img/icons/node.png")}}" class="lang-program" alt="node" id="node">
+                        <img src="{{url_for('static', filename="img/icons/react.png")}}" class="lang-program" alt="react" id="react">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="myProjects" id="myProjects">
+          
+<div class="langs-title">
+    <br><br><br><br><br><br>
+                <h2 class="aboutTitle" data-translate="my-projects"></h2>
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="card-img">
+                        <img class="project" src="{{url_for('static', filename="img/projects/autonite.webp")}}" alt="autonite" id="autonite">
+                        <div class="text-hidden"><p>Autonite</p>
+                            <p>JSF | JAVA | JAVASCRIPT | MYSQL</p>
+                        </div>
+                            
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img class="project" src="{{url_for('static', filename="img/projects/calculator.webp")}}" alt="calculator" id="calculator">
+                        <div class="text-hidden"><p data-translate="calculator"></p>
+                            <p>HTML | JAVASCRIPT</p>
+                            <div class="card-icons">
+                                <div class="card-icons-github">
+                                    <a href="https://github.com/JavLizca720/Calculadora">
+                                        <img src="{{url_for('static', filename="img/social/github.png")}}" class="icon-card" alt="git-hub" id="git-hub-calculadora">
+                                    </a>
+                                </div>
+                                <div class="card-icons-arrow">
+                                    <a href="https://calculadora720.netlify.app/">
+                                        <img src="{{url_for('static', filename="img/social/arrow.png")}}" class="icon-card" alt="git-hub" id="git-hub-calculadora">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img class="project" src="{{url_for('static', filename="img/projects/laracrud.webp")}}" alt="laravel-crud" id="laravel-crud">
+                        <div class="text-hidden"><p>Crud laravel</p>
+                            <p>PHP | LARAVEL | MYSQL | TAILWIND</p>
+                            <!--<div class="card-icons">
+                                <a href="">
+                                    <img src="{{url_for('static', filename="img/social/github.png")}}" class="icon-card" alt="git-hub" id="git-hub-calculadora">
+                                </a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img class="project" src="{{url_for('static', filename="img/projects/calendar.webp")}}" alt="calendar" id="calendar">
+                        <div class="text-hidden"><p data-translate="calendar"></p>
+                            <p>PHP | MYSQL | FULLCALENDAR</p>
+                            <div class="card-icons">
+                                <a href="https://github.com/JavLizca720/Calendario720">
+                                    <img src="{{url_for('static', filename="img/social/github.png")}}" class="icon-card" alt="git-hub" id="git-hub-calculadora">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img class="project" src="{{url_for('static', filename="img/projects/apiLaravel.webp")}}" alt="apiLaravel" id="apiLaravel">
+                        <div class="text-hidden"><p>API Laravel</p>
+                            <p>PHP | LARAVEL | BOOTSTRAP</p>
+                            <div class="card-icons">
+                                <a href="https://github.com/JavLizca720/API-Laravel.git">
+                                    <img src="{{url_for('static', filename="img/social/github.png")}}" class="icon-card" alt="git-hub" id="git-hub-calculadora">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img class="project" src="{{url_for('static', filename="img/projects/apiPython.webp")}}" alt="apiPython" id="apiPython">
+                        <div class="text-hidden"><p>API Python</p>
+                            <p>PYTHON | BOOTSTRAP</p>
+                            <div class="card-icons">
+                                <a href="https://github.com/JavLizca720/API-Python">
+                                    <img src="{{url_for('static', filename="img/social/github.png")}}" class="icon-card" alt="git-hub" id="git-hub-calculadora">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img class="project" src="{{url_for('static', filename="img/projects/CRUDPython.webp")}}" alt="CRUDPython" id="CRUDPython">
+                        <div class="text-hidden"><p>CRUD Python</p>
+                            <p>PYTHON(FLASK) | MYSQL | BOOTSTRAP</p>
+                            <div class="card-icons">
+                                <a href="https://github.com/JavLizca720/CRUD-Python">
+                                    <img src="{{url_for('static', filename="img/social/github.png")}}" class="icon-card" alt="git-hub" id="git-hub-calculadora">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <br><br><br>
+
+        <h2 class="aboutTitle" data-translate="contact"></h2>
+        <div class="contact" id="contact">
+            
+            <form method="POST" action="/send" id="form">
+                <div class="contact-form">
+                    <div class="input">
+                        <label for="name" data-translate="name"></label>
+                        <input type="text" id="name" name="name" class="input-form">
+                        <p id="validationName" class="validationName" data-translate="name-validate"></p>
+                    </div>
+
+                    <div class="input">
+                        <label for="read" data-translate="reason"></label>
+                        <input type="text" id="read" name="read" class="input-form">
+                        <p id="validationRead" class="validationRead" data-translate="read-validate"></p>
+                    </div>
+
+                    <div class="input">
+                        <label for="message" data-translate="message"></label>
+                        <input type="text" id="message" name="message" class="input-form input-form-message">
+                        <p id="validationMessage" class="validationMessage" data-translate="message-validate"></p>
+                    </div>
+
+                    <div class="button">
+                        <button type="submit" class="form_button" data-translate="send"></button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="contact-thanks">
+                <div class="thanks">
+                    <img src="{{url_for('static', filename="img/contact/message.png")}}" class="contact-image" alt="message" id="message">
+                </div>
+                <div class="thanks-text">
+                    <h2 class="thanks-for-contact">Gracias por contactar</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="footer" id="footer">
+    <div class="footer-tags">
+        <img src="{{url_for('static', filename="img/social/facebook.png")}}" class="footer-image footer-image-first" alt="footer-facebook" id="footer-facebook">
+        <img src="{{url_for('static', filename="img/social/instagram.png")}}" class="footer-image" alt="footer-instagram" id="footer-instagram">
+        <img src="{{url_for('static', filename="img/social/github.png")}}" class="footer-image" alt="footer-github" id="footer-github">
+        <img src="{{url_for('static', filename="img/social/linkedin.png")}}" class="footer-image" alt="footer-linkedin" id="footer-linkedin">
+        <p>JAVIER LIZCA | Copyright © Derechos reservados</p>
+    </div>
+</footer>
+    
+</body>
+<script src="{{url_for('static', filename="js/lang.js")}}" charset="utf-8"></script>
+<script src="{{url_for('static', filename="js/colors.js")}}" charset="utf-8"></script>
+<script src="{{url_for('static', filename="js/toggle.js")}}" charset="utf-8"></script>
+<script src="{{url_for('static', filename="js/sticky.js")}}" charset="utf-8"></script>
+<script src="{{url_for('static', filename="js/validate.js")}}" charset="utf-8"></script>
+</html>
